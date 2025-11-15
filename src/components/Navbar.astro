@@ -1,0 +1,41 @@
+---
+const navItems = [
+    {id: 'home', label: 'Home', href: '#home'},
+    {id: 'about', label: 'About', href: '#about'},
+    {id: 'projects', label: 'Proyectos', href: '#projects'},
+    {id: 'blog', label: 'Blog', href: '#blog'},
+]
+---
+
+<nav class="relative" aria-label="Primary navigation">
+    <div class="relative">
+        <div
+            class="relative flex items-center gap-1 rounded-full border border-slate-700 bg-slate-900/70 px-2 py-1 text-[11px] font-medium text-slate-300"
+            data-nav-root
+        >
+            {/* Pill indicator */}
+            <div class="absolute top-1 bottom-1 rounded-full bg-sky-500/20 shadow-[0_0_30px_rgba(56, 189, 248, 0.4)] transition-all duration-200 ease-initial"
+            data-nav-indicator
+            aria-hidden="true"
+            ></div>
+
+            {navItems.map((item, index) => (
+                <a 
+                    href={item.href}
+                    data-nav-item={item.id}
+                    data-index={index}
+                    data-active={index === 0 ? 'true' : 'false'}
+                    class="relative z-10 px-3 py-1 mx-4 text-[14px]"
+                >
+                    {item.label}
+                </a>
+            ))}
+        </div>
+    </div>
+
+    <script>
+        import { initNavbar } from "../scripts/navbar";
+
+        initNavbar();
+    </script>
+</nav>
