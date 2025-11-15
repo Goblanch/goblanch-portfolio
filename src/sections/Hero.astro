@@ -1,1 +1,84 @@
-<main></main>
+<main class="min-h-[calc(100vh-4rem)] bg-linear-to-b from-black via-slate-950 to-slate-950 text-slate-100">
+    <section class="mx-auto flex max-w-5xl flex-col gap-12 px-4 py-16 md:flex-row md:items-center">
+        {/* Columnas de texto */}
+        <div class="flex-1 space-y-6 me-4">
+            <p class="text-xs uppercase tracking-[0.25em] text-sky-400/80">Protfolio · Web · Games</p>
+            <h1 class="text-xl font-bold sm:text-5xl md:text-6xl">
+                Gonzalo Blanch Domínguez
+                <span class="mt-3 text-3xl block bg-linear-to-r from-sky-400 via-cyan-300 to-emerald-300 bg-clip-text text-transparent">
+                    Software Engineer Student and Game Developer.
+                </span>
+            </h1>
+
+            <p class="max-w-lg text-sm leading-relaxed text-slate-300">
+                Construyo experiencias interactivas desde cero: videojuegos, sistemas de UI y herramientas para
+                equipos. Este portfolio es mi laboratorio público, donde documento lo que aprendo mientras desarrollo.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-3">
+                <a 
+                    href="#projects"
+                    class="inline-flex items-center justify-center rounded-full border border-sky-500/60 bg-sky-500/10 px-5 py-2 text-sm font-medium text-sky-100 hover:bg-sky-500/20 transition animate-zoom-in"
+                    >
+                    Ver proyectos
+                </a>
+
+                <a 
+                    href="#projects"
+                    class="inline-flex items-center justify-center rounded-full border border-slate-700 bg-sky-500/10 px-5 py-2 text-sm font-medium text-slate-200 hover:border-sky-500 hover:text-sky-100 transition animate-zoom-in"
+                    >
+                    Contactar conmigo
+                </a>
+
+                <span class="text-xs text-slate-400">
+                    Hecho con Astro · Tailwind · TypeScript
+                </span>
+            </div>
+        </div>
+
+        {/*Columna visual */}
+        <div class="relative mt-10 flex-1 md:mt-0">
+            <div class="pointer-events-none absolute -inset-10 rounded-3xl border border-sky-500/10">
+
+                <div class="relative rounded-3xl border border-slate-800 bg-slate-950/60 p-5 shadow-2xl mb-3">
+                    <div class="mb-4 flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-slate-500">
+                        <span>Now playing</span>
+                        <span>Computer Science // Portfolio</span>
+                    </div>
+                </div>
+
+                <div class="px-2">
+                    <div class="space-y-7 ">
+                        <div class="flex justify-between">
+                            <span class="text-slate-400">Stack actual</span>
+                            <span class="font-medium text-slate-100">Astro · React · Unity</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-400">Focus</span>
+                        <span class="font-medium text-slate-100">Juego narrativo & herramientas</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="text-slate-400">Location</span>
+                        <span class="font-medium text-slate-100">Madrid · España</span>
+                    </div>
+                </div>
+
+                <div class="mt-6 grid grid-cols-3 gap-2 text-[10px]">
+                    <div class="rounded-xl border border-slate-800 bg-slate-900/60 p-3">
+                        <p class="text-slate-400">Horas en engine</p>
+                        <p class="mt-1 text-lg font-semibold text-sky-300">+1000</p>
+                    </div>
+                    <div class="rounded-xl border border-slate-800 bg-slate-900/60 p-3">
+                        <p class="text-slate-400">Proyectos</p>
+                        <p class="mt-1 text-lg font-semibold text-emerald-300">+10</p>
+                    </div>
+                    <div class="rounded-xl border border-slate-800 bg-slate-900/60 p-3">
+                        <p class="text-slate-400">En desarrollo</p>
+                        <p class="mt-1 text-lg font-semibold text-violet-300">Jackplot y más</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
